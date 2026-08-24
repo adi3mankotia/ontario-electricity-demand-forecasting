@@ -26,6 +26,20 @@ The final selected model was **XGBoost with `learning_rate=0.03`**, which achiev
 
 The final XGBoost model achieved an approximate forecast accuracy of **98.79%** and reduced error by approximately **52.5%** compared with the persistence baseline.
 
+## Visual Results
+
+### Final XGBoost Forecast
+
+![Final XGBoost Forecast](images/final_xgboost_forecast.png)
+
+The final XGBoost model closely tracked actual next-hour Ontario electricity demand on the 2026 test set.
+
+### Weather and Demand Relationship
+
+![Demand vs Temperature](images/demand_vs_temperature.png)
+
+Electricity demand showed a nonlinear relationship with temperature. Demand increased during very cold and very hot conditions, supporting the use of weather-based features such as heating and cooling degree variables.
+
 ## Data Sources
 
 This project uses:
@@ -110,6 +124,10 @@ ontario-electricity-demand-forecasting/
 ├── forecasting_github_final.ipynb
 ├── requirements.txt
 ├── .gitignore
+│
+├── images/
+│   ├── final_xgboost_forecast.png
+│   └── demand_vs_temperature.png
 │
 ├── data/
 │   ├── HFED_ Ontario MARKET_DEMAND data.csv
