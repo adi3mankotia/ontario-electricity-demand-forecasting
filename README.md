@@ -2,6 +2,9 @@
 
 A machine learning project that forecasts next-hour Ontario electricity demand using historical demand, market demand, calendar features, Ontario holidays, and weather data.
 
+## Open in Google Colab
+
+[![Open In Colab](https://colab.research.google.com/drive/1JaFIfw3Ee7ut5wma2CLfSlp_0DCR5129?usp=sharing)
 ## Project Overview
 
 The goal of this project is to predict Ontario electricity demand for the next hour using time-series and weather-based features. The project compares multiple models against a simple persistence baseline to evaluate whether machine learning improves forecasting performance.
